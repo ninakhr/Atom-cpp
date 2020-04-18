@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a1, q, n, sum;
+	cin >> a1 >> q >> n;
+	sum = a1;
+	for (int i = 1; i < n; ++i) {
+		a1 *= q;
+		sum += a1;
+	}	
+	cout << sum;
+	return 0;
+}
