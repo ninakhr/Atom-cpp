@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,  i;
+	unsigned long fact = 1;
+	cin >> n;
+	for (int i = n; i > 1; i--) {
+		fact*= i;
+	}
+	if (n > 0) {
+		cout << fact;
+	} 
+	else if (n < 0) {
+		cout << "Factorial is the function defined on the set of non-negative integers";
+	} 
+	else {
+		cout << 1;
+	}
+	
+	return 0;
+}
